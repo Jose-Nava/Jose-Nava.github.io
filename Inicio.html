@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Artes Graficas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+<!-- Barra de navegación -->
+<header class="Barra">
+    <!-- Barra de navegación superior -->
+    <div class="navbar-top">
+        <button class="nav-btn" onclick="scrollToSection('Diseños')">Diseños</button>
+        <div class="nav-dropdown">
+            <button class="nav-btn">Productos</button>
+            <div class="nav-dropdown-content">
+                <a onclick="scrollToSection('G1')">Tazas</a>
+                <a onclick="scrollToSection('G2')">Playeras</a>
+                <a onclick="scrollToSection('G3')">Gorras</a>
+                <a onclick="scrollToSection('G4')">Lonas</a>
+                <a onclick="scrollToSection('G5')">Otros</a>
+            </div>
+        </div>
+        <button class="nav-btn" onclick="scrollToSection('historia')">Acerca de nosotros</button>
+    <div class="nav-dropdown">
+        <button class="nav-btn">Contacto</button>
+        <div class="nav-dropdown-content">
+            <a onclick="scrollToSection('G7')">Facebook</a>
+            <a onclick="scrollToSection('G7')">WhatsApp</a>
+        </div>
+    </div>
+    <button class="nav-btn" onclick="scrollToSection('Ubicación')">Ubicacion</button>
+    <button class="nav-btn" onclick="scrollToSection('Cotizar')">Cotizar</button>
+</div>
+    <div class="navbar">
+        <a class="icono">
+            <img src="Imagenes/Inicio.jpg" alt="Logo" width="50" height="50" >
+        </a>
+        <div class="theme-toggle">
+            <img class="sun-icon" src="Icons/luna-llena.png" alt="Modo claro" width="40" height="40">
+            <img class="moon-icon" src="Icons/sol.png" alt="Modo oscuro" width="40" height="40">
+        </div>
+        <!-- Contenedor de búsqueda -->
+        <div class="search-container">
+            <!-- Campo de búsqueda -->
+            <input type="text" placeholder="Buscar..." id="searchInput">
+        </div>
+        <!-- Nombre del negocio -->
+        <h1 class="tekuanitext" onclick="scrollToSection('historia')">TALLER GRAFICO TEKUANI</h1>
+    </div>
+</header>
+<!-- Botón para desplazarse hacia arriba -->
+<button onclick="scrollToTop()" class="scroll-to-top">↑</button>
+<!-- Carrusel de imágenes -->
+<div class="carrusel-container">
+    <img src="Carrusel/img1.jpg" alt="Imagen 1" class="carrusel-img visible">
+    <img src="Productos/Playeras/Playera1.jpg" alt="imagenAleatoria1" class="carrusel-img">
+    <img src="Carrusel/img2.jpg" alt="Imagen 2" class="carrusel-img">
+    <img src="Productos/Playeras/Playera4.jpg" alt="imagenAleatoria2" class="carrusel-img">
+    <img src="Carrusel/img3.jpg" alt="Imagen 3" class="carrusel-img">
+    <img src="Productos/Playeras/PLAYERAS BOB ESPONJA.jpg" alt="imagenAleatoria3" class="carrusel-img">
+    <img src="Productos/Playeras/playeras6.jpg" alt="imagenAleatoria4" class="carrusel-img">
+</div>
+<!-- Carrusel de texto -->
+<div class="carousel-container">
+    <div class="carousel-text">
+        <h2>DISEÑOS PERSONALIZADOS, ESTAMOS A SU DISPOSICIÓN</h2>
+    </div>
+</div>
+    <!--Cortinas del contenido-->
+<section class="Diseños" id="Diseños">
+    <img src="Carrusel/img1.jpg" alt="Tazas" onclick="scrollToSection('seccion1')">
+    <img src="Carrusel/img2.jpg" alt="Playeras" onclick="scrollToSection('seccion2')">
+    <img src="Carrusel/img3.jpg" alt="Gorras" onclick="scrollToSection('seccion3')">
+    <img src="Carrusel/img4.jpg" alt="Lonas" onclick="scrollToSection('seccion4')">
+    <img src="Carrusel/img5.jpg" alt="Otros" onclick="scrollToSection('seccion5')">
+</section>
+<div class="ubicacion" id="Ubicación">
+    <h2>Estamos ubicados en</h2>
+    <p>B.San Francisco Zitlala Gro</p>
+    <a href="https://www.google.com/maps" target="_blank">
+        <img src="Icons/mapas.png" alt="Buscar Ubicación">
+    </a>
+</div>
+<!--Galerias-->
+<main>
+    <div class="G1" id="G1">
+        <h4>Tazas</h4>
+    </div>
+    <div class="seccion1 searchble" id="seccion1">
+        <div class="image-grid">
+            <div>
+                <img src="Productos/Tazas/Taza1.jpg" alt="imagen1">
+                <h3>Taza</h3>
+                <p>Taza de Bob Sponja Color azul turqueza</p>
+                <p>Precio:$50</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza2.jpg" alt="imagen2">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$80</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza3.jpg" alt="imagen3" id="Taza1">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza4.jpg" alt="imagen4">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza5.jpg" alt="imagen5">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza6.jpg" alt="imagen6">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$20</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza7.jpg" alt="imagen7">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza8.jpg" alt="imagen8">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza9.jpg" alt="imagen9">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza10.jpg" alt="imagen10">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza11.jpg" alt="imagen11">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza12.jpg" alt="imagen12">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza7.jpg" alt="imagen13">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Tazas/Taza2.jpg" alt="imagen14">
+                <h3>Taza</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+        </div>
+    </div>
+    <div class="G2" id="G2">
+        <h4>Playeras</h4>
+    </div>
+    <div class="seccion2 searchble" id="seccion2">
+        <div class="image-grid">
+            <div>
+                <img src="Productos/Playeras/Playera1.jpg" alt="imagen1">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/Playera2.jpg" alt="imagen2">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/Playera3.jpg" alt="imagen3">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/PLAYERAS BOB ESPONJA.jpg" alt="imagen4">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/Playera4.jpg" alt="imagen5">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/Playera5.jpg" alt="imagen6">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/playeras6.jpg" alt="imagen7">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Playeras/Playera7.jpg" alt="imagen8">
+                <h3>Playera</h3>
+                <p>Descripcion</p>
+                <p>Precio:$$$</p>
+            </div>
+        </div>
+    </div>
+    <div class="G3" id="G3">
+        <h4>Gorras</h4>
+    </div>
+    <div class="seccion3 searchble" id="seccion3">
+        <div class="image-grid">
+            <div>
+                <img src="Productos/Gorras/Gorra1.jpg" alt="imagen1">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra2.jpg" alt="imagen2">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra3.jpg" alt="imagen3">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra4.jpg" alt="imagen4">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra5.jpg" alt="imagen5">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra6.jpg" alt="imagen6">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra7.jpg" alt="imagen7">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra8.jpg" alt="imagen8">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra9.jpg" alt="imagen9">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra10.jpg" alt="imagen10">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra11.jpg" alt="imagen11">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra12.jpg" alt="imagen12">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra13.jpg" alt="imagen13">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Gorras/Gorra14.jpg" alt="imagen14">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+        </div>
+    </div>
+    <div class="G4" id="G4">
+        <h4>Lonas</h4>
+    </div>
+    <div class="seccion4 searchble" id="seccion4">
+        <div class="image-grid">
+            <div>
+                <img src="Productos/Lonas/Lona1.jpg" alt="imagen1">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona2.jpg" alt="imagen2">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona3.jpg" alt="imagen3">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona4.jpg" alt="imagen4">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona5.jpg" alt="imagen5">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona2.jpg" alt="imagen6">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona4.jpg" alt="imagen7">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona5.jpg" alt="imagen8">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona2.jpg" alt="imagen9">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona1.jpg" alt="imagen10">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona5.jpg" alt="imagen11">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona3.jpg" alt="imagen12">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona6.jpg" alt="imagen13">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Productos/Lonas/Lona7.jpg" alt="imagen14">
+                <h3>Lona</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+        </div>
+    </div>
+    <div class="G5" id="G5">
+        <h4>Otros</h4>
+    </div>
+    <div class="seccion5 searchble" id="seccion5">
+        <div class="image-grid">
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen1">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen2">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen3">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen4">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen5">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen6">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen7">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen8">
+                <h3>Gorra</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen9">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen10">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen11">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen12">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen13">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+            <div>
+                <img src="Carrusel/img5.jpg" alt="imagen14">
+                <h3>Otros</h3>
+                <p>Descripcio</p>
+                <p>Precio: $$$$</p>
+            </div>
+        </div>
+    </div>
+    <!-- Ventana emergente (modal) -->
+    <div class="modal" id="productModal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <img src="" alt="Imagen del producto" id="productImage">
+        <h3 id="productName"></h3>
+        <p id="productDescription"></p>
+        <p id="productPrice"></p>
+    </div>
+    
+
+</main>
+<!--Redes sociales-->
+<div class="redes" id="G7">
+    <!-- Enlace a Facebook -->
+    <a href="https://facebook.com/profile.php?id=100087455481485" class="facebook">
+        <img src="Icons/facebook.png" alt="Facebook" width="40" height="40">
+    </a>
+    <!-- Enlace a WhatsApp -->
+    <a href="https://wa.me/7561061955" class="whatsapp">
+        <img src="Icons/iconfinder-social-media-applications-23whatsapp-4102606_113811.png" alt="WhatsApp" width="40" height="40">
+    </a>
+</div>
+<!--Historia-->
+<div class="historia" id="historia">
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, est veniam ullam incidunt officiis aut magnam. Molestias dolorem laboriosam laborum, nostrum blanditiis labore nesciunt dolor perspiciatis, iure consequatur animi possimus!</h2>
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla fugiat laborum aliquid aspernatur sunt. Excepturi laborum, distinctio incidunt id fugiat voluptas dicta eaque deserunt eligendi voluptate temporibus quod quae accusantium.</h2>
+</div>
+<!-- Pie de página -->
+<div class="footer1">
+    <p>&copy; Taller de Artes Gráficas Tekuani</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
